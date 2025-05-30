@@ -4,6 +4,7 @@
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   background-color: var(--bg-color, #000028);
 	font-family: "IBM Plex mono", sans-serif;
+	background-image: var(--bg-image, url(../images/cover-image-dark.png));
 	background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -61,11 +62,6 @@
 	display: grid;
 	position: relative;
 	grid-template-rows: 1fr min-content 1fr;
-	background-image: var(--bg-image, url(../images/cover-image-dark.png));
-	background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .header__theme-menu {
@@ -112,7 +108,7 @@
 	color: var(--title-color, #db00ff);
 	text-shadow: 4px 4px 0 var(--accent-color, rgb(255 0 112));
 	font-size: var(--title-font-size, clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem));
-	line-height: 83%;
+	line-height: var(--title-line-height, 83%);
 }
 
 .header__text {
@@ -127,3 +123,18 @@
   background-color: var(--accent-color, rgb(255 0 112));
   color: var(--title-decor-color, #000028);
 }
+
+.content {
+  color: var(--main-font-color);
+  padding: 0 var(--page-padding);
+  margin-block: var(--content-margin-block);
+  line-height: var(--main-line-height, 23.4px);
+}
+
+.content__section-title {
+	color: var(--accent-color);
+	margin-block-end: 20px;
+	font-size: var(--main-font-size, 1.125rem);
+	line-height: var(--main-line-height);
+}
+
