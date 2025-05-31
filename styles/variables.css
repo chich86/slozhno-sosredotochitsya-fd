@@ -19,4 +19,14 @@
   --hover-border-color: rgb(255 0 112 / 0.4);
   --content-margin-block: 40px;
   --content__section-margin: 50px;
+  --content__section-title-color: rgb(255 0 112);
+}
+
+@media (min-width: 768px) {
+  :root {
+    --page-padding: 20px;
+    --content-margin-block: 60px;
+    --content__section-margin: 80px;
+    --title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
 }

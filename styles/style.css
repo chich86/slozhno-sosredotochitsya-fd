@@ -3,22 +3,22 @@
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   background-color: var(--bg-color, #000028);
-	font-family: "IBM Plex mono", sans-serif;
-	background-image: var(--bg-image, url(../images/cover-image-dark.png));
-	background-attachment: fixed;
+  font-family: "IBM Plex mono", sans-serif;
+  background-image: var(--bg-image, url(../images/cover-image-dark.png));
+  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-	font-size: 1.125rem;
+  font-size: 1.125rem;
 }
 
 .header__decorative-inscription {
-	position: absolute;
-	color: var(--accent-color, rgb(255 0 112));
-	text-transform: uppercase;
-	font-size: 18px;
-	line-height: 25px;
-	right: calc(28px + var(--page-padding, 10px));
+  position: absolute;
+  color: var(--accent-color, rgb(255 0 112));
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 25px;
+  right: calc(28px + var(--page-padding, 10px));
   top: calc(1px + var(--page-padding, 10px));
 }
 
@@ -26,22 +26,22 @@
   content: "";
   position: absolute;
   right: -15px;
-	top: 7px;
-	background-color: var(--accent-color, rgb(255 0 112));
-	block-size: 9px;
-	aspect-ratio: 1;
+  top: 7px;
+  background-color: var(--accent-color, rgb(255 0 112));
+  block-size: 9px;
+  aspect-ratio: 1;
   border-radius: 50%;
-	box-shadow: 0px 0px 4px 2px var(--accent-color, rgb(255 0 112));
+  box-shadow: 0px 0px 4px 2px var(--accent-color, rgb(255 0 112));
 }
 
 .decorated-zone::before {
-	content: "";
-	position: absolute;
-	top: var(--page-padding, 10px);
+  content: "";
+  position: absolute;
+  top: var(--page-padding, 10px);
   right: var(--page-padding, 10px);
-	block-size: 25px;
-	inline-size: 25px;
-	border-inline-end: 1px var(--decor-color, rgb(255 0 112)) solid;
+  block-size: 25px;
+  inline-size: 25px;
+  border-inline-end: 1px var(--decor-color, rgb(255 0 112)) solid;
   border-block-start: 1px var(--decor-color, rgb(255 0 112)) solid;
 }
 
@@ -57,17 +57,17 @@
 }
 
 .header {
-	padding: var(--page-padding, 10px);
-	block-size: 100vh;
-	display: grid;
-	position: relative;
-	grid-template-rows: 1fr min-content 1fr;
+  padding: var(--page-padding, 10px);
+  block-size: 100vh;
+  display: grid;
+  position: relative;
+  grid-template-rows: 1fr min-content 1fr;
 }
 
 .header__theme-menu {
-	align-self: center;
-	justify-self: end;
-	padding-block: 30px;
+  align-self: center;
+  justify-self: end;
+  padding-block: 30px;
 }
 
 .header__theme-menu-list {
@@ -77,12 +77,12 @@
 }
 
 .header__theme-menu-button {
-	background-color: transparent;
-	text-transform: lowercase;
-	line-height: 18px;
-	border: 1px transparent solid;
-	color: var(--button-color, rgb(255 0 112));
-	padding: 2px 13px 4px;
+  background-color: transparent;
+  text-transform: lowercase;
+  line-height: 18px;
+  border: 1px transparent solid;
+  color: var(--button-color, rgb(255 0 112));
+  padding: 2px 13px 4px;
   display: flex;
   justify-content: center;
   cursor: pointer;
@@ -105,14 +105,17 @@
 }
 
 .title {
-	color: var(--title-color, #db00ff);
-	text-shadow: 4px 4px 0 var(--accent-color, rgb(255 0 112));
-	font-size: var(--title-font-size, clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem));
-	line-height: var(--title-line-height, 83%);
+  color: var(--title-color, #db00ff);
+  text-shadow: 4px 4px 0 var(--accent-color, rgb(255 0 112));
+  font-size: var(
+    --title-font-size,
+    clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem)
+  );
+  line-height: var(--title-line-height, 83%);
 }
 
 .header__text {
-	align-self: center;
+  align-self: center;
 }
 
 .header__text-paragraph {
@@ -132,10 +135,10 @@
 }
 
 .content__section-title {
-	color: var(--accent-color);
-	margin-block-end: 20px;
-	font-size: var(--main-font-size, 1.125rem);
-	line-height: var(--main-line-height);
+  color: var(--content__section-title-color, rgb(255 0 112));
+  margin-block-end: 20px;
+  font-size: var(--main-font-size, 1.125rem);
+  line-height: var(--main-line-height);
 }
 
 .content__section:not(:last-child) {
@@ -147,26 +150,26 @@
 }
 
 .content__section-list-item-title {
-	margin-block-end: 10px;
-	font-size: var(--main-font-size);
-	line-height: var(--main-line-height);
+  margin-block-end: 10px;
+  font-size: var(--main-font-size);
+  line-height: var(--main-line-height);
 }
 
 .content__link {
-	text-shadow: 2px 2px 0 var(--accent-color);
-	text-decoration: none;
+  text-shadow: 2px 2px 0 var(--accent-color);
+  text-decoration: none;
 }
 
 .content__link:hover {
-	border-bottom: 1px var(--main-font-color) solid;
+  border-bottom: 1px var(--main-font-color) solid;
 }
 
 .content__link:focus {
-	outline: none;
+  outline: none;
 }
 
 .content__link:focus-visible {
-	outline: 1px var(--main-font-color) solid;
+  outline: 1px var(--main-font-color) solid;
 }
 
 .content__section-text:not(:last-child) {
@@ -209,4 +212,86 @@
   align-items: center;
   padding: var(--page-padding);
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding-left: 0;
+  }
+
+  .header__text {
+    width: calc((100% - var(--page-padding)) / 2);
+    justify-self: end;
+  }
+
+  .content__section:nth-child(odd):not(.content__section-images) {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    gap: 20px;
+  }
+
+  .content__section-title {
+    width: 236px;
+  }
+
+  .content__section-list {
+    grid-column: 2;
+  }
+
+  .content__section-list {
+    grid-column: 2;
+  }
+
+  .content__images-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+  }
+
+  .content__images-container img:nth-child(1) {
+    grid-column: 1/3;
+  }
+
+  .content__images-container img:nth-child(2) {
+    grid-column: 3;
+    grid-row: -4/-2;
+  }
+
+  .content__images-container img:nth-child(3) {
+    grid-column: 1;
+    grid-row: 2/4;
+  }
+
+  .content__images-container img:nth-child(4) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .content__images-container img:nth-child(5) {
+    grid-column: 2/-1;
+    grid-row: 3;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header__theme-menu {
+    align-self: start;
+    justify-self: center;
+    padding-inline-start: var(--page-padding);
+    padding-block: 0;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: row;
+  }
+
+  .content__section-title {
+    width: 315px;
+  }
+
+  .content__section:nth-child(even) .content__section-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
 }
