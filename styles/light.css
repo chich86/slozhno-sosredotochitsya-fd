@@ -12,5 +12,33 @@
 }
 
 .theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+  --accent-color: #ff8dcb;
+  --bg-image: url(../images/cover-image-light.png);
+  --bg-color: #fff1f7;
+  --button-color: #353430;
+  --content__section-title-color: #353430;
+  --title-decor-color: #353430;
+  --decor-color: #353430;
+  --hover-border-color: rgba(50 49 45/ 0.4);
+  --title-color: #ffc2e6;
+  --main-font-color: #353430;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+  --accent-color: #ff8dcb;
+  --bg-image: url(../images/cover-image-light.png);
+  --bg-color: #fff1f7;
+  --button-color: #353430;
+  --content__section-title-color: #353430;
+  --title-decor-color: #353430;
+  --decor-color: #353430;
+  --hover-border-color: rgba(50 49 45/ 0.4);
+  --title-color: #ffc2e6;
+  --main-font-color: #353430;
+  }
+
+  .header__decoration-rec {
+    display: none;
+  }
 }

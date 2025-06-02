@@ -26,12 +26,11 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  
-  .header__decorative-inscription {
+  .header__decoration-rec {
     display: block;
   }
 }
 
-.theme-dark .header__decorative-inscription {
+.theme-dark .header__decoration-rec {
   display: block;
 }

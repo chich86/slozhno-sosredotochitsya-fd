@@ -9,7 +9,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  font-size: 1.125rem;
+  font-size: var(--main-font-size);
 }
 
 .header {
@@ -108,6 +108,7 @@
 
 .header__theme-menu-button_active {
   border: 1px var(--button-color, rgb(255 0 112)) solid;
+  pointer-events: none;
 }
 
 .header__theme-menu-button:hover {
