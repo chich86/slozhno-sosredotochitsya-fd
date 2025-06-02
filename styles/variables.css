@@ -7,8 +7,8 @@
   --accent-color: rgb(255 0 112);
   --bg-image: url(../images/cover-image-dark.png);
   --button-color: rgb(255 0 112);
-  --content__section-title-color: rgb(255 0 112);
-  --content__section-margin: 50px;
+  --content-title-color: rgb(255 0 112);
+  --content-margin: 50px;
   --content-margin-block: 40px;
   --decor-color: rgb(255 0 112);
   --hover-border-color: rgb(255 0 112 / 0.4);

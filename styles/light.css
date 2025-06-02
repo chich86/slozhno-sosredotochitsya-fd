@@ -16,7 +16,7 @@
   --bg-image: url(../images/cover-image-light.png);
   --bg-color: #fff1f7;
   --button-color: #353430;
-  --content__section-title-color: #353430;
+  --content-title-color: #353430;
   --title-decor-color: #353430;
   --decor-color: #353430;
   --hover-border-color: rgba(50 49 45/ 0.4);
@@ -30,7 +30,7 @@
   --bg-image: url(../images/cover-image-light.png);
   --bg-color: #fff1f7;
   --button-color: #353430;
-  --content__section-title-color: #353430;
+  --content-title-color: #353430;
   --title-decor-color: #353430;
   --decor-color: #353430;
   --hover-border-color: rgba(50 49 45/ 0.4);
@@ -41,4 +41,8 @@
   .header__decoration-rec {
     display: none;
   }
+}
+
+.theme-light .header__decoration-rec {
+  display: none;
 }

@@ -18,6 +18,7 @@
   grid-template-rows: 1fr min-content 1fr;
   block-size: 100vh;
   padding: var(--page-padding, 10px);
+  min-height: 668px;
 }
 
 .title {
@@ -52,7 +53,7 @@
   content: "";
   position: absolute;
   top: 7px;
-  right: -15px;
+  right: -19px;
   block-size: 9px;
   aspect-ratio: 1;
   border-radius: 50%;
