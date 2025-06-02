@@ -14,7 +14,7 @@
   --hover-border-color: rgb(255 0 112 / 0.4);
   --main-font: "IBM Plex mono";
   --main-font-color: #f1b2ce;
-  --main-font-size: 1.25rem;
+  --main-font-size: 1.125rem;
   --main-line-height: 23.4px;
   --page-padding: 10px;
   --title-color: #db00ff;
@@ -24,7 +24,7 @@
 
 @media (min-width: 768px) {
   :root {
-    --content__section-margin: 70px;
+    --content__section-margin: 80px;
     --content-margin-block: 60px;
     --page-padding: 20px;
     --title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
